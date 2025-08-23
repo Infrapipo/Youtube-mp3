@@ -27,7 +27,7 @@ Parámetros explicados:
 
 Una vez levantado, la aplicación estará disponible en tu navegador en:
 
-http://IP_DEL_SERVIDOR:5500
+`http://IP_DEL_SERVIDOR:5500`
 
 ## Descargar música desde línea de comando (opcional)
 
