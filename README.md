@@ -10,20 +10,20 @@ La descarga se guarda localmente en el servidor dentro de /MUSIC/Youtube. Ademas
 
 ## Uso
 Al exponer la aplicación con el siguiente comando:
-`sudo docker build youtube-mp3 .`
-`sudo docker run -d --name youtubemp3 -p 5500:5500 -v ~/Music/Youtube:/downloads --restart unless-stopped youtube-mp3`
+- `sudo docker build youtube-mp3 .`
+- `sudo docker run -d --name youtubemp3 -p 5500:5500 -v ~/Music/Youtube:/downloads --restart unless-stopped youtube-mp3`
 
 Parámetros explicados:
 
-- -d: ejecuta el contenedor en segundo plano.
+- `-d`: ejecuta el contenedor en segundo plano.
 
-- --name youtubemp3: asigna un nombre al contenedor.
+- `--name youtubemp3`: asigna un nombre al contenedor.
 
-- -p 5500:5500: expone el puerto 5500 del contenedor al puerto 5500 del host.
+- `-p 5500:5500`: expone el puerto 5500 del contenedor al puerto 5500 del host.
 
-- -v ~/Music/Youtube:/downloads: mapea la carpeta local donde se guardarán los MP3.
+- `-v ~/Music/Youtube:/downloads`: mapea la carpeta local donde se guardarán los MP3.
 
-- --restart unless-stopped: hace que el contenedor se reinicie automáticamente si el servidor se reinicia.
+- `--restart unless-stopped`: hace que el contenedor se reinicie automáticamente si el servidor se reinicia.
 
 Una vez levantado, la aplicación estará disponible en tu navegador en:
 
