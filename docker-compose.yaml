@@ -1,0 +1,10 @@
+services:
+  youtube-mp3:
+    build: .
+    container_name: youtube-mp3
+    ports:
+      - "5500:5000"
+    volumes:
+      # Carpeta temporal de descargas (la app borra el mp3 después de enviarlo)
+      - ./downloads:/downloads
+    restart: unless-stopped

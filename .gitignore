@@ -1,0 +1,6 @@
+# Carpeta temporal de descargas (montada por docker-compose)
+downloads/
+
+# Python
+__pycache__/
+*.py[cod]
